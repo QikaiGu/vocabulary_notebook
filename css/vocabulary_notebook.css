@@ -1,0 +1,60 @@
+.title {
+    font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    font-size: 24px;
+    margin: 20px 10px;
+}
+
+.vocabulary-table {
+
+}
+
+.vocabulary-table tr:nth-child(2) {
+    background-color: #93b4dc;
+}
+
+.vocabulary-table tr:nth-child(3) {
+    background-color: #b3d4fc;
+}
+
+.vocabulary-table td:nth-child(1) {
+
+}
+
+.vocabulary-table td:nth-child(2) {
+
+}
+
+.vocabulary-table td:nth-child(3) {
+
+}
+
+.vocabulary-table td:nth-child(4) {
+
+}
+
+.valid_button{
+    cursor: pointer;
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #779be9), color-stop(1, #2463de));
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    text-indent: -9999px;
+    text-shadow: 0px -1px 1px #3d0700;
+    width: 30px;
+    height: 20px;
+    -webkit-mask-image: url("../img/check.png");
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 30px;
+}
+.valid_button:hover{
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #6989cf), color-stop(1, #1d55c4));
+    cursor: pointer;
+}
+.valid_button:active{
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #5c78b5), color-stop(1, #1b4bab));
+}
+
+.div-controls {
+    margin: 20px 0;
+}
