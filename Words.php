@@ -1,5 +1,11 @@
 <?php
 
+function __autoload($class_name)
+{
+    include $class_name . '.php';
+}
+
+
 class Words
 {
     /**
@@ -7,11 +13,13 @@ class Words
      */
     private $words;
 
+
     public function __construct()
     {
         $this->words = array();
         $this->getWordsFromDB();
     }
+
 
     public function addWord($word)
     {
@@ -54,14 +62,14 @@ class Words
     {
         $html = '';
 
-        for ($i = 0; $i < count($this->words); $i++) {
+        for ($id = 1; $id <= count($this->words); $id++) {
             $wordLine = "";
-            $word = $this->getWord($i);
+            $word = $this->getWord($id - 1);
             $wordEn = $word->getWordEn();
             $wordFr = $word->getWordFr();
             $wordCn = $word->getWordCn();
 
-            $wordLine .= "<tr id='tr$i'>\n" .
+            $wordLine .= "<tr id='tr$id'>\n" .
                 "<td>$wordEn</td>\n" .
                 "<td>$wordFr</td>\n" .
                 "<td>$wordCn</td>\n" .

@@ -4,8 +4,9 @@
  * Created by PhpStorm.
  * User: qikai
  * Date: 14-5-18
- * Time: 下午6:10
+ * Time: 18:10
  */
+
 class Word
 {
 

@@ -8,11 +8,11 @@
 
 }
 
-.vocabulary-table tr:nth-child(2) {
+.vocabulary-table tr:nth-child(even):not(:last-child) {
     background-color: #93b4dc;
 }
 
-.vocabulary-table tr:nth-child(3) {
+.vocabulary-table tr:nth-child(odd):not(:first-child):not(:last-child) {
     background-color: #b3d4fc;
 }
 
@@ -53,6 +53,14 @@
 }
 .valid_button:active{
     background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #5c78b5), color-stop(1, #1b4bab));
+}
+
+.learned{
+
+}
+
+.abandoned:before{
+    content: "\2718";
 }
 
 .div-controls {
